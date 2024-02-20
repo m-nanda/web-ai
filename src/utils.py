@@ -88,7 +88,7 @@ def get_recommendation(
         df: pd.DataFrame, 
         user_features: pd.DataFrame,
         bought_items: pd.DataFrame,
-        model: sklearn.neighbors._classification.KNeighborsClassifier,
+        model: object,
         user_idx: dict,  
         uid: int, 
         item_idx: dict, 
