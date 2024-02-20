@@ -63,7 +63,7 @@ def main() -> None:
     current_products = db["product_id"].unique()
     random.shuffle(current_products)
     st.subheader(f"Want to explore yourself?")
-    show_recommendation(db, current_products)
+    show_recommendation(db, current_products, len(current_products))
 
 def show_recommendation(
     db: pd.DataFrame,
